@@ -51,7 +51,7 @@ console.log(paris);*/
 
 
 
-let askViajes = prompt("Nombre/s y Apellido/s del pasajero");
+/*let askViajes = prompt("Nombre/s y Apellido/s del pasajero");
 let ask0Viajes = prompt("Edad");
 let ask1Viajes = parseInt(prompt("En caso de ser acompañado por niños, ¿Cuántos? De lo contrario ponga '0'"));
 let ask2Viajes = prompt("Fecha de salida estimada");
@@ -59,7 +59,7 @@ let ask3Viajes = prompt("Indique lugar de destino");
 
 const Viajes2 = new Viajes(askViajes, ask0Viajes, ask1Viajes, ask2Viajes, ask3Viajes)
 console.log(Viajes2);
-
+*/
 
 let listaViajes = [
     {lugar:"Alemania", salida: "23/06", precio: 25650},
@@ -85,3 +85,14 @@ let listaActualizada = listaViajes.map((viajes) => {
 listaActualizada.forEach(viajes =>{
     console.log( `este viaje es ${viajes.lugar} su salida es ${viajes.salida} y su precio "Actualizado" es ${viajes.precio}`);
 })
+
+let paises = document.getElementById("paises");
+console.log(paises.children[0].innerHTML);
+
+let elementoNuevo = document.createElement("h2");
+elementoNuevo.setAttribute("Id", "subtitulo");
+elementoNuevo.innerHTML = "Nuevo Destino: Malasia";
+let contenedor =document.getElementById("contenedor");
+contenedor.appendChild(elementoNuevo);
+console.log(elementoNuevo);
+
