@@ -89,10 +89,14 @@ listaActualizada.forEach(viajes =>{
 let paises = document.getElementById("paises");
 console.log(paises.children[0].innerHTML);
 
-let elementoNuevo = document.createElement("h2");
+let elementoNuevo = document.createElement("p");
 elementoNuevo.setAttribute("Id", "subtitulo");
 elementoNuevo.innerHTML = "Nuevo Destino: Malasia";
 let contenedor =document.getElementById("contenedor");
 contenedor.appendChild(elementoNuevo);
 console.log(elementoNuevo);
 
+const text = document.querySelector("#texto");
+text.addEventListener("change",()=>{
+    console.log(`el correo elecónico indicado es: ${text.value}`);
+})

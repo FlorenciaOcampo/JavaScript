@@ -23,6 +23,9 @@
     margin-left: 45px;
 }
 
-#carouselExampleFade{
-    
+.d-block w-100{
+    background-size: h-100;
+}
+.correo{
+    margin-left: 10px
 }
