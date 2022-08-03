@@ -100,3 +100,21 @@ const text = document.querySelector("#texto");
 text.addEventListener("change",()=>{
     console.log(`el correo elecónico indicado es: ${text.value}`);
 })
+
+lst = [{
+    nombre: "Hector",
+    edad: 34
+},{
+    nombre: "Eddy",
+    edad: 46
+}];
+
+/*localStorage.setItem("list", JSON.stringify(lst));*/
+lst = JSON.parse(localStorage.getItem("list"));
+console.log (lst);
+
+
+
+
+
+
