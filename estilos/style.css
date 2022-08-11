@@ -29,3 +29,17 @@
 .correo{
     margin-left: 10px
 }
+
+.formulario{
+    margin-left: 30px;
+}
+/*BANNER*/
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("../img/fin.png");
+    height: 600px;
+    width: 100%;
+}

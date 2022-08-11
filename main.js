@@ -89,19 +89,35 @@ listaActualizada.forEach(viajes =>{
 let paises = document.getElementById("paises");
 console.log(paises.children[0].innerHTML);
 
-let elementoNuevo = document.createElement("p");
+//DOM
+let elementoNuevo = document.createElement("button");
 elementoNuevo.setAttribute("Id", "subtitulo");
-elementoNuevo.innerHTML = "Nuevo Destino: Malasia";
+elementoNuevo.innerHTML = "Enviar";
 let contenedor =document.getElementById("contenedor");
 contenedor.appendChild(elementoNuevo);
 console.log(elementoNuevo);
+let nombre = document.getElementById("nombre");
+let apellido = document.getElementById("apellido");
+let email = document.getElementById("pass");
+let num = document.getElementById("pass2");
+let respuesta= document.getElementById("respuesta");
+elementoNuevo.addEventListener("click", (e) => {
+    e.preventDefault()
+    let nuevoUsuario = {
+        nombre: nombre.value,
+        apellido: apellido.value,
+        email: email.value,
+        numero: num.value
+    }; 
+    lst.push(nuevoUsuario);
+    localStorage.setItem("list", JSON.stringify(lst));
+    respuesta.innerText = "¡Gracias por suscribirte!"
+});
 
-const text = document.querySelector("#texto");
-text.addEventListener("change",()=>{
-    console.log(`el correo elecónico indicado es: ${text.value}`);
-})
 
-lst = [{
+
+//LOCAL STORAGE
+const lst = [{
     nombre: "Hector",
     edad: 34
 },{
@@ -112,9 +128,15 @@ lst = [{
 /*localStorage.setItem("list", JSON.stringify(lst));*/
 lst = JSON.parse(localStorage.getItem("list"));
 console.log (lst);
+//
 
+const usuario = {
+    nombre: "John Doe",
+    edad: 14
+}
 
+const registroIngreso = usuario.edad >= 18 && new Date()
 
-
+  console.log(registroIngreso) // FALSE
 
 

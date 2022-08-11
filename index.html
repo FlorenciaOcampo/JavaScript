@@ -42,17 +42,20 @@
         </div>
       </nav>
 
-<div class="banner">
+      <div class="banner">
+
+      </div>
+<!-- <div class="banner">
       <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./img/africar.png" class="h-100" alt="...">
+            <img style="height: 750px;" src="./img/africar.png" class="w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="./img/colombia.png" class="h-100" alt="...">
+            <img style="height: 750px;"   src="./img/colombia.png" class="w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="./img/alaskar.png" class="h-100" alt="...">
+            <img style="height: 750px;"  src="./img/alaskar.png" class="w-100" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -65,10 +68,38 @@
         </button>
       </div>
       </div>
+  -->
+
+
+  <!--       <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img style="height: 750px;" src="./img/africar.png" class="w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img style="height: 750px;"   src="./img/colombia.png" class="w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img style="height: 750px;"  src="./img/alaskar.png" class="w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div> -->
       
+      
+
+
     <div class="chamuyo1">
-    <h1>¿Piensa recorrer el mundo?</h1> 
-    <h2>Nuestro programa puede llevarlo.</h2>
+    <h1>Organizamos todo tu viaje por vos.</h1> 
+    <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_cmsczshd.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
+
     </div> 
       
 <div class="containerdestinos">
@@ -84,17 +115,43 @@
       <li>Antártida</li>
   </ul></div>
   <p>Visitá la sección de Turismo Negro para ver todos los programas.</p>
-  <p id="contenedor"></p>
+
 
   <div class="correo">
-    <p>¿Quieres recibir en tiempo real los nuevos destinos? <br> Dejanos tu correo electrónico.
+    <p>¿Quieres recibir en tiempo real los nuevos destinos? <br> Dejanos tus datos.
     </p>
-  <p id="param"></p>
-  <input type="text" id="texto">
-  <button id="bot">Enviar</button>
+  </div>
+      <div class="contenedor_form">
+    <div class="formulario">
+    <form action="" class="formulario" name="formulario_registro" method="post">
+      <div>
+        <div class="input_group">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre">
+      </div>
+      <div class="input-group">
+        <label for="email">Apellido</label>
+        <input type="text" id="apellido" name="email">
+      </div>
+      <label for="pass">Correo Electrónico</label>
+      <input type="email" id="pass" name="pass">
+      </div>
+      <div class="input-group">
+        <label for="pass2">Numero </label>
+      <input type="number" id="pass2" name="pass2">
+      </div>
+    </div>
+      <button id="contenedor"></button>
+    </form>
+    <p id="respuesta"></p>
   </div>
 
-  <div id="elementos"></div>
+  <p>¿Que te parece J&J? Calificanos!</p>
+  <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_bcjfw1k6.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+
+
+
+
 <!-- Footer -->
 <footer class="text-center text-lg-start bg-light text-muted">
   <!-- Section: Social media -->
@@ -222,7 +279,7 @@
 
 <!-- Footer -->
 </footer>
-
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 <script src="main.js"></script>
 <script src="storage.js"></script>
